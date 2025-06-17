@@ -3,15 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Centered Form</title>
+    <title>Look Live</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
-             <link rel="stylesheet" type="text/css" href="home.css">
-                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+         <link rel="stylesheet" type="text/css" href="home.css">
 
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
- <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #161A30; color: #F0ECE5; width: 100%;">
+
+
+
+<nav class="navbar navbar-expand-lg sticky-top" style="background-color: #161A30; color: #F0ECE5; width: 100%;">
   <div class="container-fluid px-5">
     <!-- Brand Logo and Name -->
     <a class="navbar-brand d-flex align-items-center" href="home.html" style="color: #F0ECE5;">
@@ -26,49 +28,79 @@
       <a href="home.html" class="btn btn-sm" style="color: #F0ECE5; font-size: small;">
         <i class="fa-solid fa-house px-2"></i>Home
       </a>
-      <button class="btn btn-sm" style="color: #F0ECE5; font-size: small;">
-        <i class="fa-solid fa-user px-2"></i>Logout
-      </button>
+      <a  href="login.html" class="btn btn-sm" style="color: #F0ECE5; font-size: small;">
+        <i class="fa-solid fa-user px-2"></i>Login
+      </a>
     </div>
   </div>
 </nav>
 
+<!-- Signup Section -->
+<div class="position-relative d-flex" style="min-height: 100PX;">
 
-<div >
- <div style="
-    width: 100%;
-    height: 100%;
-    background-image: url('pexels-dominika-roseclay-14947292.jpg');
+  <!-- Background Image -->
+  <div style="
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: url('freeeyeglass.jpg');
     background-size: cover;
     background-position: center;
-    position: absolute;
-    top: 0;
-   
     opacity: 60%;
-    z-index: -30;">
+    z-index: -7;">
   </div>
-     <div>
-    <div class="d-flex justify-content-center align-items-center h-100" >
-      <form style="width: 300px; border: 2px solid transparent; padding: 20px;border-radius: 20px;" >
-        <div class="mb-3 ">
-          <label for="exampleInputEmail1" class="form-label  justify-content-center">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-theme btn-sm w-100">Submit</button>
-      </form>
+
+  <!-- Signup Form (Left Side) -->
+  <div class="p-4 shadow " style="margin: 50px; border-radius: 10px; z-index: 1; max-width: 400px;">
+    <h3 class="text-center mb-4">Create Your Account</h3>
+   <form class="row g-3">
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail4">
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Password</label>
+    <input type="password" class="form-control" id="inputPassword4">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress" class="form-label">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress2" class="form-label">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">City</label>
+    <input type="text" class="form-control" id="inputCity">
+  </div>
+  <div class="col-md-4">
+    <label for="inputState" class="form-label">State</label>
+    <select id="inputState" class="form-select">
+      <option selected>Choose...</option>
+      <option>...</option>
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="inputZip" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="inputZip">
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
     </div>
-    </div>
-    </div>
-    <footer style="background-color:#161A30; color: white; padding: 40px 60px; margin-top: 300px;">
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Sign in</button>
+  </div>
+</form>
+  </div>
+</div>
+</div>
+<!-- Footer -->
+<footer style="background-color:#161A30; color: white; padding: 40px 60px;">
   <div class="container">
     <div class="row">
       <div class="col-md-3">
@@ -111,7 +143,7 @@
   </div>
 </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
-
-  </body>
+<!-- Bootstrap Script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

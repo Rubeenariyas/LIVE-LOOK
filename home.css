@@ -35,9 +35,7 @@
     padding-top:30px ;
 
 }
-/* body{
-    color:#F0ECE5
-} */
+
    .btn-theme {
     background-color: #161A30;
     color: #F0ECE5;
@@ -48,41 +46,6 @@
     background-color: #31304D;
     color: #F0ECE5;
     border-color: #161A30;
+    
   }
-   /* body {
-      background-color: #161A30;
-      color: #B6BBC4;
-    }
-    .card {
-   background-image:url(sunglasses_488220-55664.jpg);
-   background-repeat: no-repeat;
-      color: #B6BBC4;
-    }
-    .form-control,
-    .form-select {
-      background-color: #F0ECE5;
-      color: #161A30;
-    }
-    .form-control:focus,
-    .form-select:focus {
-      border-color: #ffffff;
-      box-shadow: 0 0 0 0.2rem rgba(182, 187, 196, 0.25);
-    }
-    .btn-success {
-      background-color: #161A30;
-      border-color: #161A30;
-    }
-    .btn-success:hover {
-      background-color: #31304D;
-      border-color: #31304D;
-    }
-    .form-check-input:checked {
-      background-color: #161A30;
-      border-color: #161A30;
-    }
-    a {
-      color: #F0ECE5;
-    }
-    a:hover {
-      color: #B6BBC4;
-    } */
+   
